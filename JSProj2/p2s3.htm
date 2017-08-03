@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project 2 - Basic JavaScript</title>
+    <link type="text/css" rel="stylesheet" href="../JSStyles/mainProjectStyles.css" />
+</head>
+
+<body>
+<div id="wrapper">
+    <nav id="topNav">
+        <ul>
+            <li><a href="../default.htm">Home</a></li>
+            <li><a href="menu.htm">Proj 2</a></li>
+            <li><a href="../JSProj3/menu3.htm">Proj 3</a></li>
+            <li><a href="../JSProj4/menu4.htm">Proj 4</a></li>
+            <li><a href="../JSProj5/menu5.htm">Proj 5</a></li>
+            <li><a href="../JSProj6/menu6.htm">Proj 6</a></li>
+            <li><a href="../JSProj7/menu7.htm">Proj 7</a></li>
+            <li><a href="../JSProj8/menu8.htm">Proj 8</a></li>
+        </ul>
+    </nav>
+
+<div id="content">
+    <h1>Project 2 <strong class="highlight">Script 3</strong></h1>
+    <h4>Basic JavaScript</h4>
+    <p>The user will input three numbers. The script will output an alert window displaying the smallest number, the largest number, and the average of the three numbers. </p>
+
+<script>
+    var num1;
+    var num2;
+    var num3;
+    var number1;
+    var number2;
+    var number3;
+    var smNum=0, lgNum=0, avgNum=0, prodNum=0;
+
+    // prompt user for 3 numbers
+    number1 = window.prompt( "Please enter the first of three numbers: " );
+    number2 = window.prompt( "Please enter the second number:" );
+    number3 = window.prompt( "Please enter the third number:" );
+
+    // convert input to computer language
+    num1 = parseInt(number1);
+    num2 = parseInt(number2);
+    num3 = parseInt(number3);
+
+   // smallest number
+    if ( (num1 < num2) && (num1 < num3) ) {
+        smNum = num1;
+    } else if ( (num2 < num1) && (num2 < num3) ) {
+        smNum = num2;
+    } else {
+        smNum = num3;
+    }
+
+    // largest number
+    if ( (num1 > num2) && (num1 > num3) ) {
+        lgNum = num1;
+    } else if ( (num2 > num1) && (num2 > num3) ) {
+        lgNum = num2;
+    } else {
+        lgNum = num3;
+    }
+
+    // average and product
+    avgNum = (num1 + num2 + num3)/3;
+    prodNum = (num1 * num2) * num3;
+
+    // display the results
+    window.alert("Smallest Number: " + smNum + ";  Largest Number: " + lgNum + ";  Average Number: " + avgNum + ";  Product Number: " + prodNum);
+
+</script>
+
+</div>
+</div>
+    <footer>
+        <p> &copy; 2016 Sharon Tender</p>
+    </footer>
+</body>
+</html>

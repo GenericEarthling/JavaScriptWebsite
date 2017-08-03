@@ -1,0 +1,177 @@
+/* orange #EB5937, dk grey #1C1919, grey #373D3C, lt grey #D3CBBD, blue #456F74 */
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 1em;
+	background-color: #1C1919;
+	padding: 20px auto;
+	color: #D3CBBD;
+	margin: 30px 10%;
+	width: 800px;
+}
+/* This is the blue box*/
+#wrapper {
+	padding: 30px;
+	border: 2px gray solid;
+	margin-bottom: 20px;
+	background-color: #456F74;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	box-shadow: 10px 10px 20px 0px black;
+	-webkit-box-shadow:  10px 10px 20px 0px black;
+	-moz-box-shadow: 10px 10px 20px 0px black;
+}
+/* this is the photo, h1, and table */
+#container {
+	margin: 30px auto;
+
+}
+
+
+table {
+	border-collapse: collapse;
+	clear: left;
+	margin: 30px auto;
+}
+tr, td, th {
+	padding: .7em 1.5em;
+	background-color: #373D3C;
+	border: 1px #D3CBBD solid;
+	text-align: center;
+}
+th {
+	background-color: #EB5937;
+	font-size: 1.1em;
+	padding: 10px 15px;
+}
+
+.projectName {
+	text-align: left;
+	padding-left: 10px;
+}
+footer {
+	font-size: .7em;
+	text-align: center;
+}
+img {
+	float: left;
+	margin: 0 20px 20px 0;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border: 2px gray solid;
+	width: 180px;
+}
+h1 {
+	font-family: Helvetica;
+	text-align: left;
+	margin-left: auto;
+	font-size: 1.8em;
+}
+.h4ScriptHead {
+	font-style: normal;
+	color: #373D3C;
+}
+.highlight {
+	color: #EB5937;
+	font-weight: lighter;
+}
+
+p {
+	font-size: .75em;
+	margin-bottom: 20px;
+	font-weight: lighter;
+	color: #1C1919;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #D3CBBD;
+}
+a:hover {
+	color: #EB5937;
+}
+#topNav ul {
+	list-style-type: none;
+	padding: 1em 0;
+	text-align: center;
+	border-top: 1px solid #373D3C;
+	border-bottom: 1px solid #373D3C;
+}
+#topNav li {
+	display: inline;
+	padding: 1em;
+}
+.warning {
+	color: #EB5937;
+	font-weight: bolder;
+}
+textarea {
+
+	background-color: #456F74;
+	color: white;
+	font-family: monospace;
+	font-size: 1em;
+	border: none;
+}
+.button, #validateButton, #celsiusBtn, #farenheitBtn, #reverseBtn,
+#reverseBtn2, #calculate_distance {
+	border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .85em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#validateButton {
+	margin-left: 12.6em;
+	width: auto;
+}
+label {
+	float: left;
+	text-align:right;
+	height: 15px;
+}
+.p6s4label {
+	width: 10em;
+}
+.p6s4input {
+	margin-left: 1em;
+	margin-bottom: .5em;
+	width: 20em;
+}
+#topPic {
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#p7s2content {
+	height: 500px;
+}
+.p7s2boxes {
+	width: 200px;
+	height: 80px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 20px 0px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

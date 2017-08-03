@@ -1,0 +1,88 @@
+/*
+ * orange #ffaf0f, dk grey #666666, lt grey #AFBDC7, dk blue #0078a3, lt blue #59b4d4
+ */
+body{
+	font-family: "Trebuchet MS", sans-serif;
+	margin: 50px;
+	background-color: #AFBDC7;
+}
+/* form styles */
+.readOnly {
+	background-color: black;
+	color: #0078a3;
+}
+.readOnly, input {
+	padding: 4px;
+	font-size: 1em;
+	border: none;
+	margin-left: 1em;
+	margin-bottom: .5em;
+	width: 20em;
+}
+#outMessage {
+	font-family: monospace;
+	font-size: 1.2em;
+}
+input {
+	color: black;
+}
+form {
+	color: white;
+	width: 600px;
+}
+fieldset {
+	margin: 20px;
+	padding: 10px;
+}
+label {
+	float:left;
+	text-align: right;
+	height: 15px;
+	width: 8em;
+}
+button {
+	font-size: 1em;
+	margin: 10px;
+	padding: 5px;
+}
+legend {
+	color: #ffaf0f;
+}
+#wrapper {
+	margin: 20px auto;
+	width: 800px;
+}
+#tabs {
+	width: 800px;
+
+}
+#topNav ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 1px solid #373D3C;
+    border-bottom: 1px solid #373D3C;
+    color: #d19405;
+}
+#topNav li {
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em;
+}
+a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: bold;
+}
+a:hover {
+    color: #373D3C;
+
+}
+footer p {
+    clear: left;
+}
+span {
+	color: red;
+	font-size: .75em;
+	margin: 0 0 0 10px;
+}

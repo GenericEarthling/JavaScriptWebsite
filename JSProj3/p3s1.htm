@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project 3 - Functions, Methods, and Objects</title>
+    <link type="text/css" rel="stylesheet" href="../JSStyles/mainProjectStyles.css" />
+</head>
+
+<body>
+<div id="wrapper">
+    <nav id="topNav">
+        <ul>
+            <li><a href="../default.htm">Home</a></li>
+            <li><a href="../JSProj2/menu.htm">Proj 2</a></li>
+            <li><a href="../JSProj3/menu3.htm">Proj 3</a></li>
+            <li><a href="../JSProj4/menu4.htm">Proj 4</a></li>
+            <li><a href="../JSProj5/menu5.htm">Proj 5</a></li>
+            <li><a href="../JSProj6/menu6.htm">Proj 6</a></li>
+            <li><a href="../JSProj7/menu7.htm">Proj 7</a></li>
+            <li><a href="../JSProj8/menu8.htm">Proj 8</a></li>
+        </ul>
+    </nav>
+
+<div id="content">
+    <h1>Project 3 <strong class="highlight">Script 1</strong></h1>
+    <h4>Functions, Methods, and Objects</h4>
+    <p>Mileage: The user inputs miles driven and the gallons of gas used. The script will calculate miles per gallon.</p>
+
+<script>
+    var miles;
+    var gallons;
+    var mpg;
+
+    // prompt user for gas and gallons used
+    var milesDriven = prompt("Enter the number of miles driven.");
+    var gallonsGas = prompt("Enter the gallons of gas used.");
+
+    // conovert input to computer integers
+    miles = parseInt(milesDriven);
+    gallons = parseInt(gallonsGas);
+
+    // do the math
+    mpg = miles/gallons;
+
+    // display the results
+    document.writeln("The miles per gallon is: " + mpg);
+
+</script>
+
+</div>
+</div>
+    <footer>
+        <p> &copy; 2016 Sharon Tender</p>
+    </footer>
+</body>
+</html>

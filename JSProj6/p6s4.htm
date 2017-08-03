@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project 2 - Basic JavaScript</title>
+    <link type="text/css" rel="stylesheet" href="../JSStyles/mainProjectStyles.css" />
+</head>
+
+<body>
+<div id="wrapper">
+    <nav id="topNav">
+        <ul>
+            <li><a href="../default.htm">Home</a></li>
+            <li><a href="../JSProj2/menu.htm">Proj 2</a></li>
+            <li><a href="../JSProj3/menu3.htm">Proj 3</a></li>
+            <li><a href="../JSProj4/menu4.htm">Proj 4</a></li>
+            <li><a href="../JSProj5/menu5.htm">Proj 5</a></li>
+            <li><a href="../JSProj6/menu6.htm">Proj 6</a></li>
+            <li><a href="../JSProj7/menu7.htm">Proj 7</a></li>
+            <li><a href="../JSProj8/menu8.htm">Proj 8</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <h1>Project 6 <strong class="highlight">Script 4</strong></h1>
+        <p>Form Validation</p>
+    </div>
+
+    <div>
+        <form>
+        <label class="p6s4label" for="firstName">First name</label>
+        <input class="p6s4input" type="text" name="firstName" id="firstName" required autofocus title="Required" /><br />
+
+        <label class="p6s4label" for="lastName">Last name</label>
+        <input class="p6s4input" type="text" name="lastName" id="lastName" required title="Required" /><br />
+
+        <label class="p6s4label" for="email">Email</label>
+        <input class="p6s4input" type="email" name="email" id="email" placeholder="name@here.com" required title="Required" /><br />
+
+        <label class="p6s4label" for="phone">Phone</label>
+        <input class="p6s4input" type="text" name="phone" id="phone" placeholder="###-###-####" title="Requires area code and dashes." required pattern="\d{3}[\-]\d{3}[\-]\d{4}" /><br />
+
+        <label class="p6s4label" for="dateOfBirth">Date of birth</label>
+        <input class="p6s4input" type="date" name="dateOfBirth" id="dateOfBirth" placeholder="MM/DD/YYYY" title="Requires two digit month and day, back-slashes, and full year." required pattern="[01]?\d\/[0-3]\d\/\d{4}" /><br />
+
+        <label class="p6s4label" for="stateBorn">State where born</label>
+        <input class="p6s4input" type="text" name="stateBorn" id="stateBorn" placeholder="Two Letter abbreviation" title="Requires two letters." required /><br />
+
+        <label class="p6s4label" for="payRate">Pay Rate</label>
+        <input class="p6s4input" type="number" name="payRate" id="payRate" placeholder="00.00/hr" title="Requires numbers only" required /><br />
+
+        <label class="p6s4label" for="personalURL">Personal URL</label>
+        <input class="p6s4input" type="url" name="personalURL" id="personalURL" title="Requires 'https://www.name.domain' or 'http://www.name.domain " required pattern="http?://.+" placeholder="http://www.urladdress.here"  /><br />
+
+        <input type="submit" name="validateButton" id="validateButton" value="Check Validation" />
+<!-- patterns from Murach's HTML5 and CSS3 p401 -->
+
+        </form>
+        <p id="message1"></p>
+    </div>
+
+
+
+    <script src="p6s4.js"></script>
+</div>
+    <footer>
+        <p> &copy; 2016 Sharon Tender</p>
+    </footer>
+</body>
+</html>
+
+
+

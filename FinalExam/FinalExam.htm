@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Final Exam</title>
+
+    <!-- Google CDN   https://developers.google.com/speed/libraries/     -->
+    <!-- This is at the top because the page would load the HTML before showing the tab formating   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- style sheet downloaded from Theme Roller -->
+    <link type="text/css" rel="stylesheet" href="jquery-ui-UIdarkness.css" />
+    <!-- my css style sheet -->
+    <link type="text/css" rel="stylesheet" href="FinalExam.css" />
+
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+    <header>
+        <!-- navigation links  -->
+        <nav id="topNav">
+        <ul>
+            <li><a href="../default.htm">Home</a></li>
+            <li><a href="../JSProj2/menu.htm">Proj 2</a></li>
+            <li><a href="../JSProj3/menu3.htm">Proj 3</a></li>
+            <li><a href="../JSProj4/menu4.htm">Proj 4</a></li>
+            <li><a href="../JSProj5/menu5.htm">Proj 5</a></li>
+            <li><a href="../JSProj6/menu6.htm">Proj 6</a></li>
+            <li><a href="../JSProj7/menu7.htm">Proj 7</a></li>
+            <li><a href="../JSProj8/menu8.htm">Proj 8</a></li>
+        </ul>
+        </nav>
+        <h1>Final Exam</h1>
+    </header>
+
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Shhh!</a></li>
+    <li><a href="#tabs-2">Code</a></li>
+  </ul>
+  <div id="tabs-1">
+    <fieldset>
+    <legend>TOP SECRET</legend>
+    <p>THIS IS A COVER SHEET</p>
+    <p>ALL INDIVIDUALS HANDLING THIS INFORMATION ARE REQUIRED <br /> TO PROTECT IT FROM UNAUTHORIZED DISCLOSURE.</p>
+    <p> TOP SECRET</p>
+    </fieldset>
+    </div>
+  <div id="tabs-2">
+    <fieldset>
+        <legend>Encode and Decode</legend>
+    <form>
+        <!-- Date -->
+        <label class="boxLabel" for="">Date</label>
+        <input class="readOnly" name="date" id="date" readonly="" title="Local date on this computer." /><br />
+
+        <!-- Time -->
+        <label class="boxLabel" for="">Time</label>
+        <input class="readOnly" id="time" readonly="" title="Local time on this computer." /><br />
+
+        <!-- User Input: Code Name -->
+        <label class="boxLabel" for="">Code Name</label>
+        <input autofocus type="text" name="codeName" id="codeName" required title="Use your code name for encoding. Use sender's code name for decoding." /><br />
+
+        <!-- User Input: Message to encode -->
+        <label class="boxLabel" for="">Message</label>
+        <input class="" type="text" name="inMessage" id="inMessage" placeholder="Type message here." required title="Type your text here. Note: Can use . # - ? but spaces are not allowed." /><br />
+
+        <!-- Decoded message -->
+        <label class="boxLabel" for="">Result</label>
+        <input class="readOnly" name="outMessage" id="outMessage" readonly="" title="Your desired encoded or decoded message shows up here." /><br />
+
+        <!-- Buttons -->
+        <button class="ui-button" type="button" id="encodeButton" title="This will encode your super-secret message.">Encode Message</button>
+        <button class="ui-button" type="button" id="decodeButton" title="This will decode your super-secret message.">Decode Message</button>
+    </form>
+    </fieldset>
+  </div>
+</div>
+    <footer>
+        <p>&copy; Sharon Tender</p>
+    </footer>
+</div>
+</div>
+
+    <!-- jQuery UI theme roller libraries -->
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui-UIdarkness.js"></script>
+<!-- My JavaScript -->
+<script type="text/javascript" src="FinalExam.js"></script>
+<script>
+$( "#tabs" ).tabs();
+$( "#tooltip" ).tooltip();
+</script>
+
+</body>
+</html>

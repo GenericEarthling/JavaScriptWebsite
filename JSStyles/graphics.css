@@ -1,0 +1,71 @@
+#tabArea { width: 600px;
+          border: 1px solid #000000;
+          border-collapse: collapse }
+td      { width: 2px; height: 4px; margin: 0px; padding: 0px; }
+.blue   { background-color: blue; }
+.red    { background-color: red; }
+.bkgd   { background-color: #ffffff; }
+.yelo	{ background-color: yellow; }
+.green	{ background-color: green; }
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	background-color: #ffffff;
+	background-position: 50% 0;
+}
+/* this wrapper centers the content on the page with --> margin: 0px auto; */
+#wrapper {
+	width: 700px;
+	height: 820px;
+	margin: 0px auto;
+	position: relative;
+	text-align: center;
+}
+
+#content {
+	/*margin-top: 20px;
+	margin-bottom: 10px;*/
+	height: 170px;
+	padding: 0px;
+}
+.gallery {
+	float: left;
+    width: 110px;
+    /* margin-bottom: 0px;
+   margin-right: 0px;
+    margin-left: 0px;
+
+    border-right: white 1px dotted;*/
+}
+
+.gallery img {
+	/* margin: 0 0 0 0;
+    display: inline-block;
+
+    border: 1px solid rgb(0,0,0);*/
+}
+.photo {
+    float: left;
+
+    position: relative;
+}
+.photo img {
+    position: absolute;
+    height: 595px;
+}
+#topNav ul {
+	list-style-type: none;
+	padding: 1em 0;
+	text-align: center;
+	border-top: 1px solid #373D3C;
+	border-bottom: 1px solid #373D3C;
+}
+#topNav li {
+	display: inline-block;
+	padding: 1em;
+}
+footer p {
+	padding: 30px;
+	clear: left;
+}

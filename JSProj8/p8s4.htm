@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Index2.html</title>
+	<link href="jquery-ui-Sunny.css" rel="stylesheet">
+	<style>
+  body {
+      font-family: segoe ui,Arial,sans-serif;
+      margin: 50px;
+      background-color: #1C1919;
+      color: #8e846b;
+      }
+  #sortable {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 60%;
+      }
+  #sortable li {
+      margin: 0 3px 3px 3px;
+      padding: 0.4em;
+      padding-left: 1.5em;
+      font-size: 1em;
+      height: 35px;
+      }
+  #sortable li span {
+      position: absolute;
+      margin-left: -1.3em;
+      }
+
+#draggable {
+    width: 250px;
+    padding: 20px;
+    cursor: finger;
+    }
+#topNav ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 1px solid #373D3C;
+    border-bottom: 1px solid #373D3C;
+    color: #d19405;
+}
+#topNav li {
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #D3CBBD;
+}
+a:hover {
+    color: #EB5937;
+}
+footer p {
+    padding: 30px;
+    clear: left;
+}
+	</style>
+</head>
+<body>
+    <nav id="topNav">
+        <ul>
+            <li><a href="../default.htm">Home</a></li>
+            <li><a href="../JSProj2/menu.htm">Proj 2</a></li>
+            <li><a href="../JSProj3/menu3.htm">Proj 3</a></li>
+            <li><a href="../JSProj4/menu4.htm">Proj 4</a></li>
+            <li><a href="../JSProj5/menu5.htm">Proj 5</a></li>
+            <li><a href="../JSProj6/menu6.htm">Proj 6</a></li>
+            <li><a href="../JSProj7/menu7.htm">Proj 7</a></li>
+            <li><a href="../JSProj8/menu8.htm">Proj 8</a></li>
+        </ul>
+    </nav>
+
+<div>
+<h1>Project 8 Script 4</h1>
+
+<!-- Sortable -->
+<h2 class="demoHeaders">Sortable</h2>
+<p>Sunny by ThemeRoller</p>
+
+<p>Re-arrange the Morals with your favorite first and least favorite last.</p>
+
+<ul id="sortable">
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>The Seagull and the Kite: Every man should be content to mind his own business. </li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Bull and the Goat: It shows an evil disposition to take advantage of a friend in distress.</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>The Monkeys and Their Mother: The best intentions will not always ensure success.</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>The Traveler and Fortune: Everyone is more or less master of his own fate.</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>The Lion, the Fox, and the Ass: Happy is the man who learns from the misfortunes of others.</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>The Crab and the Fox: Contentment with our lot is an element of happiness.</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>The Hares and the Foxes: Count the cost before you commit yourselves.</li>
+</ul>
+
+
+<h2 class="demoHeaders">Draggable</h2>
+<p>Drag the proverb-in-a-box around the page.</p>
+<!-- draggable -->
+<div id="draggable" class="ui-widget-content">
+<h3>Fisherman and the Little Fish</h3>
+<p> AFTER toiling all day and catching nothing, a Fisherman pulled up a
+little Fish. The Fish besought him to let him go, for he was small now,
+but by and by he would grow to be a big fish and so be worth catching.
+But the Fisherman answered, “No, no, I have you now, it would be
+foolish for me to let you go; I might not get you when you had grown
+bigger.”
+
+A bird in the hand is worth two in the bush.</p>
+</div>
+    <footer>
+        <p> &copy; 2016 Sharon Tender</p>
+    </footer>
+</div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script>
+  // sorable
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+
+  // draggable
+    $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+
+</body>
+</html>

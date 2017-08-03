@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Index2.html</title>
+	<link href="../JSStyles/jquery-ui-ExciteBike.css" rel="stylesheet">
+	<style>
+	body {
+	    font-family: segoe ui,Arial,sans-serif;
+		margin: 50px;
+		background-color: #1C1919;
+		color: #cccccc;
+
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	#topNav ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 1px solid #373D3C;
+    border-bottom: 1px solid #373D3C;
+}
+#topNav li {
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em;
+    color: #EB5937;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #D3CBBD;
+}
+a:hover {
+    color: #EB5937;
+}
+footer p {
+    padding: 30px;
+    clear: left;
+}
+	</style>
+</head>
+<body>
+    <nav id="topNav">
+        <ul>
+            <li><a href="../default.htm">Home</a></li>
+            <li><a href="../JSProj2/menu.htm">Proj 2</a></li>
+            <li><a href="../JSProj3/menu3.htm">Proj 3</a></li>
+            <li><a href="../JSProj4/menu4.htm">Proj 4</a></li>
+            <li><a href="../JSProj5/menu5.htm">Proj 5</a></li>
+            <li><a href="../JSProj6/menu6.htm">Proj 6</a></li>
+            <li><a href="../JSProj7/menu7.htm">Proj 7</a></li>
+            <li><a href="../JSProj8/menu8.htm">Proj 8</a></li>
+        </ul>
+    </nav>
+
+
+<h1>Project 8 Script 3</h1>
+
+<!-- Menu -->
+<h2 class="demoHeaders">Menu Widget</h2>
+<p>Excite Bike by ThemeRoller</p>
+
+<h3>Introduction</h3>
+<p>This Web page will acquaint you with morals from Aesop's Fables. You'll see the title of the story and the moral. If you want the whole story, you'll need to read the book.'</p>
+
+<ul style="width:200px;" id="menu">
+    <li><div id="dialog-link_1">First Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+
+    <li><div>More Morals</div>
+        <ul>
+            <li><div id="dialog-link_2">Second Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+            <li><div id="dialog-link_3">Third Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+        </ul>
+    </li>
+    <li><div>Even More Morals</div>
+        <ul>
+            <li><div>Check These Out</div>
+                <ul>
+                    <li><div id="dialog-link_4">Fourth Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+                    <li><div id="dialog-link_5">Fifth Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+                    <li><div id="dialog-link_6">Sixth Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+                </ul>
+            </li>
+            <li><div>Even More Morals</div>
+                <ul>
+                    <li><div id="dialog-link_7">Seventh Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+                    <li><div id="dialog-link_8">Eighth Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+                </ul>
+            </li>
+            <li><div id="dialog-link_9">Ninth Moral</div></li> <!-- BRINGS UP DIALOG BOX  -->
+        </ul>
+    </li>
+</ul>
+<!-- Moral 1 -->
+<div id="dialog_1" title="The Two Dogs">
+<p>Children are not to be blamed for the faults of their parents.</p>
+</div>
+<!-- Moral 2 -->
+<div id="dialog_2" title="The Hawk, the Kite, and the Pigeons">
+<p>Avoid a remedy that is worse than the disease.</p>
+</div>
+<!-- Moral 3 -->
+<div id="dialog_3" title="The Sick Kite">
+<p>We must make friends in prosperity if we would have their help in adversity.</p>
+</div>
+<!-- Moral 4 -->
+<div id="dialog_4" title="The Ass, the Cock, and the Lion">
+<p>False confidence often leads into danger.</p>
+</div>
+<!-- Moral 5 -->
+<div id="dialog_5" title="The Mice and the Weasels">
+<p>The more honor the more danger.</p>
+</div>
+<!-- Moral 6 -->
+<div id="dialog_6" title="The Three Tradesmen">
+<p>Every man for himself.</p>
+</div>
+<!-- Moral 7 -->
+<div id="dialog_7" title="The Master and His Dogs">
+<p>He is not to be trusted as a friend who mistreats his own family.</p>
+</div>
+<!-- Moral 8 -->
+<div id="dialog_8" title="The Ass Carrying the Image">
+<p>They are not wise who give to themselves the credit due to others.</p>
+</div>
+<!-- Moral 9 -->
+<div id="dialog_9" title="The Two Travelers and the Axe">
+<p>He who shares the danger ought to share the prize.</p>
+</div>
+
+
+<!--<script src="external/jquery/jquery.js"></script>-->
+<script src="jquery-2.1.4.js"></script>
+<script src="jquery-ui-ExciteBike.js"></script>
+<script>
+
+$( "#menu" ).menu();
+
+// Link to open the dialog 1 moral
+$( "#dialog-link_1" ).click(function( event ) {
+	$( "#dialog_1" ).dialog( "open" );
+	event.preventDefault();
+});
+$( "#dialog_1" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 2 mora1
+$( "#dialog-link_2" ).click(function( event ) {
+    $( "#dialog_2" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_2" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 3 mora1
+$( "#dialog-link_3" ).click(function( event ) {
+    $( "#dialog_3" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_3" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 4 mora1
+$( "#dialog-link_4" ).click(function( event ) {
+    $( "#dialog_4" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_4" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 5 mora1
+$( "#dialog-link_5" ).click(function( event ) {
+    $( "#dialog_5" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_5" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 6 mora1
+$( "#dialog-link_6" ).click(function( event ) {
+    $( "#dialog_6" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_6" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 7 mora1
+$( "#dialog-link_7" ).click(function( event ) {
+    $( "#dialog_7" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_7" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 8 mora1
+$( "#dialog-link_8" ).click(function( event ) {
+    $( "#dialog_8" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_8" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+// Link to open the dialog 9 mora1
+$( "#dialog-link_9" ).click(function( event ) {
+    $( "#dialog_9" ).dialog( "open" );
+    event.preventDefault();
+});
+$( "#dialog_9" ).dialog({
+    autoOpen: false,
+    width: 400,
+    buttons: [
+        {
+            text: "Ok",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        },
+        {
+            text: "Cancel",
+            click: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    ]
+});
+
+
+
+
+</script>
+</body>
+</html>
